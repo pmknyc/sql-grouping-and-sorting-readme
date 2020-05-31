@@ -181,7 +181,7 @@ you'd like to actually return.
 
 ### Code Along III: `GROUP BY()`
 
-The `GROUP BY()` keyword is very similar to `ORDER BY()`. The only difference is that [`ORDER BY()` sorts the resulting data set of basic queries while `GROUP BY()` sorts the result sets of aggregate functions](http://www.thetricky.net/mySQL/GROUP+BY+vs+ORDER+BY).
+The `GROUP BY()` keyword is very similar to `ORDER BY()`. The only difference is that [`ORDER BY()` sorts row by row, while `GROUP BY()` sorts the results of aggregate functions](http://www.thetricky.net/mySQL/GROUP+BY+vs+ORDER+BY). ORDER BY cannot work on aggregated results!!
 
 #### Syntax
 
@@ -332,6 +332,19 @@ will produce a  syntax error.
 SELECT
 FROM
 JOIN
+  ON
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+LIMIT
+```
+
+# My Practice attempts
+
+SELECT * 
+FROM cats
+JOIN 
   ON
 WHERE
 GROUP BY
